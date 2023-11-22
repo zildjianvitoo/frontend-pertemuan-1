@@ -1,0 +1,358 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+/* header section */
+.navbar-nav a:hover{
+    background-color: #5a656d;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+.navbar-nav a{
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* header section end */
+
+/* home section */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    background-size: 200%;
+    background-position: left;
+    animation: gradient 3s infinite alternate;
+}
+
+@keyframes gradient{
+    0%{
+        background-position:left;
+    }
+
+    100%{
+        background-position:right;
+    }
+}
+
+.home .profile-photo{
+    max-height: 500px;
+    max-width: 500px;
+    border: #ffffff solid 2px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px #ffffff24;
+}
+
+.home .home-content{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home-text {
+    margin: 0 7%;
+    color: #ffffff;
+}
+
+.home-text h1{
+    font-size: 32px;
+}
+
+.home-text h2{
+    font-size: 30px;
+}
+
+.home-text p{
+    font-size: 24px;
+}
+
+.home-text h1, .home-text h2, .home-text p {
+    padding: 5px;
+}
+
+.home-text .btn-intro{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+    margin: 20px 0;
+    transition: .3s ease-in-out;
+}
+
+.home-text .btn-intro a{
+    text-decoration: none;
+    color: #081b29;
+}
+
+.home-text .btn-intro:hover{
+    background-color: #c2c2c2;
+    box-shadow: 2px 2px 4px 4px #000000;
+}
+/* home section end */
+
+/* about section */
+.about{
+    min-height: 100vh;
+    width: auto;
+    background-color: #081b29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content{
+    max-width: 650px;
+    max-height: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 6px 6px #03080c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .about-content h1{
+    font-size: 32px;
+    color: #081b29;
+    text-align: center;
+    padding: 20px;
+}
+
+.about .about-content p{
+    font-size: 24px;
+    text-align: center;
+    color: #081b29;
+}
+/* about section end */
+
+/* project section */
+.projects{
+    min-height: 150vh;
+    width: 100%; 
+    background-color: rgba(81,84,115);
+}
+
+.project-content {
+    min-width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content h1{
+    font-size: 32px;
+    color: #f3f4f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-content .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.project-content .cards .card {
+    min-width: 500px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #081b29;
+    border-radius: 25px;
+    box-shadow: 3px 3px 6px 6px #03080c5a;
+    margin: 50px;
+}
+
+.project-content .cards .card h1{
+    color: white;
+}
+
+.project-content .cards .card .project-photo{
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-content .cards .card .first-p{
+    background-image: url("supply/Following\ -\ Light\ Mode.png");
+}
+
+.project-content .cards .card .sec-p{
+    background-image: url("supply/Enhypen\'s\ album.png");
+
+}
+
+.project-content .cards .card .card-content{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.project-content .cards .card .btn-card{
+    font-size: 17px;
+    width: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.project-content .cards .card .btn-card:hover{
+    border: 2px solid #ffffff;
+    background-color: #081b29;
+    color:#ffffff;
+}
+
+.project-content .cards .card .first-btn::after{
+    content:"View";
+}
+
+.project-content .cards .card .first-btn:hover::after{
+    content:"coming soon";
+}
+
+.project-content .cards .card .first-btn:hover{
+    cursor: no-drop;
+}
+/* project section end */
+
+/* footer section */
+footer{
+    min-width: 100%;
+    min-height: 70vh;
+    background-color: #f3f4f5;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content .contact{
+    width:15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.footer-content .btn-footer{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    background-color: #f3f4f5;
+    cursor: pointer; 
+}
+
+.footer-content .btn-footer:hover{
+    fill: rgb(115, 118, 163);
+}
+
+.footer-content p a:visited{
+    color: #081b29;
+}
+
+.footer-content p a:hover{
+    font-weight: 600;
+}
+/* footer section end */
+
+@media screen and (max-width:576px){
+
+    .home .profile-photo{
+        height: 275px;
+        width: 275px;
+    }
+
+    .home .home-text {
+        text-align: center;
+        margin: 7% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-content{
+        max-width: 325px;
+        min-height: 250px;
+        padding: 30px;
+    }
+
+    .about .about-content h1{
+        font-size: 24px;
+    }
+    
+    .about .about-content p{
+        font-size: 20px;
+    }
+
+    .project-content .cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-content .cards .card {
+        min-width: 275px;
+        min-height:200px;
+    }
+
+    .project-content .cards .card .btn-card{
+        font-size: 15px;
+        width: 135px;
+    }
+
+    .project-content .cards .card h1{
+        font-size: 24px;
+    }
+    
+    .project-content .cards .card .project-photo{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .footer-content .contact{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 954px){
+
+    .home .home-content{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-content .cards {
+        display: flex;
+        justify-content: center;
+    }
+
+}
