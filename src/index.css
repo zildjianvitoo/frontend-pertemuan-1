@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, #39dd99, #01edff);
+}
+
+.bg-gradient-hover {
+  background: linear-gradient(to bottom left, #01edff, #39dd99);
+}
+
+.btn-cv:hover {
+  background: linear-gradient(to bottom left, #01edff, #39dd99);
+  transition: 300ms all;
+}
+
+body {
+  background-color: #1f242d;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.icons-box:hover {
+  transition: all 0.3s;
+  filter: drop-shadow(0 0 3px #01edff);
+}
+
+@media (min-width: 768px) {
+  .glassm {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: background-color 0.3s ease;
+  }
+}
+
+.bounce {
+  animation: floatImg 4s ease-in-out infinite;
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
