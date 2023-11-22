@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organisasi</title>
+
+    <link rel="stylesheet" href="css/organisasi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">M. Ilham Syafik</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Main Hall</a></li>
+          <!-- <li><a class="waves-effect waves-light btn triger fixed" onclick="$('.tap-target').tapTarget('open')">Open tap target</a></li> -->
+        </ul>
+      </div>
+
+      <ul class="sidenav" id="mobile-demo" style="background-color: pink">
+        <li><a href="index.html">Main Hall</a></li>
+        <li><a href="buku.html">Cantik itu luka</a></li>
+      </ul>
+
+      <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="#keasramaan">KEASRAMAAN</a></li>
+          <li class="tab"><a href="#band">BAND</a></li>
+          <li class="tab"><a href="#teknisi">TEKNISI</a></li>
+          <!-- <li>
+              <a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">menu</i></a>
+
+              <div class="tap-target" data-target="menu">
+                <div class="tap-target-content">
+                  <h5>Title</h5>
+                  <p>A bunch of text</p>
+                </div>
+              </div>
+            </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="judul">
+        <h2>Organisasi</h2>
+        <hr />
+      </div>
+      <div class="carousel">
+        <a href="#one" class="carousel-item">
+          <img src="img/keasramaan.JPG" alt="." class="foto" />
+        </a>
+        <a href="#two" class="carousel-item">
+          <img src="img/band.jpg" alt="." />
+        </a>
+        <a href="#three" class="carousel-item">
+          <img src="img/teknisi.jpg" alt="." />
+        </a>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="card" id="keasramaan">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/keasramaan.JPG" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Keasramaan Ma'had An-Najah<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Keasramaan Ma'had An-Najah<i class="material-icons right">close</i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="card" id="band">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/band.jpg" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Band ICO-6<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Band ICO-6<i class="material-icons right">close</i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="card" id="teknisi">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/teknisi.jpg" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Teknisi ICO-6<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Teknisi ICO-6<i class="material-icons right">close</i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel").carousel({
+          indicators: true,
+        });
+      });
+
+      $(document).ready(function () {
+        $(".tap-target").tapTarget();
+      });
+
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+    <script src="js/organisasi.js"></script>
+  </body>
+</html>

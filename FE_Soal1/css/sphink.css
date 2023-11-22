@@ -1,0 +1,8 @@
+body {
+  background-color: pink;
+  height: 100vh;
+}
+
+.card {
+  margin: 30vh auto;
+}

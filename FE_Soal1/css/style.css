@@ -1,0 +1,149 @@
+body {
+  background-color: rgb(255, 228, 247);
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: rgb(245, 187, 232);
+  margin-top: 3rem;
+}
+
+.jumbotron img {
+  width: 300px;
+}
+
+hr {
+  width: 30%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 3px;
+}
+
+.fav {
+  background-color: rgb(245, 187, 232);
+  margin: 0 auto;
+}
+
+.karosel {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.karosel-bungkus {
+  background-color: rgb(255, 228, 247);
+  border: 20px solid rgb(255, 228, 247);
+  overflow: hidden;
+}
+
+.karosel-bungkus img {
+  width: 100%;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.foot {
+  background-color: rgb(243, 161, 243);
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.foot i {
+  color: red;
+}
+
+.musicplay {
+  margin: auto;
+  background-color: rgb(245, 187, 232);
+}
+.parent-play {
+  width: 80vmin;
+  margin: 0 auto;
+}
+.player img {
+  width: 50vmin;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+
+.musicplay .player {
+  background-color: rgb(243, 161, 243);
+  overflow: hidden;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.control-music {
+  margin: 20% auto;
+  justify-content: center;
+  text-align: center;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 6px;
+  background-color: #f53192;
+  border-radius: 4px;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #f53192;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.kontrol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontrol div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #f53192;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+
+.kontrol div:nth-child(2) {
+  transform: scale(1.5);
+  background: #f53192;
+  color: #fff;
+}
+
+.tombol {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #f53192;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+}
+
+.contact {
+  margin: 0 auto;
+  width: 60vmin;
+}

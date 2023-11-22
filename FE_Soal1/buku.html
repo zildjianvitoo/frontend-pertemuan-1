@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/buku.css" />
+    <script src="https://kit.fontawesome.com/c124b6a53d.js" crossorigin="anonymous"></script>
+  </head>
+  <body onload="startTime()">
+    <div class="container">
+      <div class="info">Antologi Buku Nisrinaaa</div>
+      <div class="mobile-layout">
+        <div class="notification-header">
+          <div class="time" id="time"></div>
+          <div class="necessities">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+        <div class="actions">
+          <a href="index.html"><i class="fas fa-chevron-left"></i></a>
+          <i class="fas fa-bookmark"></i>
+        </div>
+        <div class="book-cover">
+          <img class="book-top" src="img/sampul.jpg" alt="book-top" />
+          <img class="book-side" src="https://raw.githubusercontent.com/atomic-variable/images-repo/e37f432405904a280858e5437ce1960753bc78a3/book-side.svg" alt="book-side" />
+        </div>
+        <div class="preface">
+          <div class="content">
+            <div class="header">
+              <div class="title">Cantik Itu Luka</div>
+              <div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="author">by Eka Kurniawan</div>
+            <div class="body">
+              <p>Novel Cantik Itu Luka becerita tentang alur hidup Dewi Ayu, pelacur cantik di zaman kolonial. Sebelum ia meninggal ia melahirkan seorang anak perempuan, yang ia beri nama cantik</p>
+              <p>Demikianlah kehidupan Si Cantik yang penuh luka. Nama yang ia emban sangat memberatkan hidupnya karena senyatanya ia berparas buruk rupa, tidak cantik rupawan sama sekali.</p>
+              <ul>
+                <li><a href="https://www.gramedia.com/best-seller/review-novel-cantik-itu-luka/">Lebih Lanjut</a></li>
+                <li><a href="https://www.gramedia.com/products/cantik-itu-luka-hc-limited-edition?utm_source=bestseller&utm_medium=bestsellerbuku&utm_campaign=seo&utm_content=BestSellerRekomendasi">Cek Harga</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+        https://saranyamk.github.io/images-repo/book-top.svg
+        https://saranyamk.github.io/images-repo/book-side.svg
+        -->
+    <script src="https://kit.fontawesome.com/c124b6a53d.js" crossorigin="anonymous"></script>
+
+    <script>
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        m = checkTime(m);
+        document.getElementById("time").innerHTML = h + ":" + m;
+        var t = setTimeout(function () {
+          startTime();
+        }, 500);
+      }
+
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        } // add zero in front of numbers < 10
+        return i;
+      }
+    </script>
+  </body>
+</html>

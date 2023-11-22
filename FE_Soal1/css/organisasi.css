@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: pink;
+}
+@font-face {
+  font-family: DigoryDoodles;
+  src: url(../font/Digory_Doodles_PS.ttf);
+}
+
+@font-face {
+  font-family: YourDream;
+  src: url(../font/YourDream-z80eL.ttf);
+}
+
+hr {
+  width: 30%;
+  margin: auto;
+  border: 3px solid black;
+}
+
+header {
+  height: 100vh;
+}
+
+.judul {
+  margin: 100px auto;
+  text-align: center;
+  justify-content: center;
+  font-family: DigoryDoodles;
+}
+
+.carousel {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.card-content {
+  background-color: rgb(248, 163, 177);
+}
+
+.nav-wrapper img {
+  width: 10%;
+}
+
+.brand-logo {
+  margin-left: 5%;
+}
