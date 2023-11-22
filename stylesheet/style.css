@@ -1,0 +1,554 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Header Start */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(71, 60, 51, 0.9);
+  padding: 1.4rem 7%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+}
+
+header .logo {
+  font-family: "Poppins", sans-serif;
+  color: #ffe4a3;
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+
+header .logo span {
+  color: #deb6ab;
+}
+
+header .navbar-container a {
+  font-size: 1.2rem;
+  color: #ffe4a3;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0 1rem;
+  /* color: rgb(51, 72, 77); */
+  transition: 0.2s linear;
+}
+
+header .navbar-container a:hover {
+  color: #deb6ab;
+}
+
+header .navbar-extra a {
+  display: inline-block;
+  color: #ffe4a3;
+  transition: 0.2s linear;
+  margin: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+
+header .navbar-extra a:hover {
+  color: #deb6ab;
+}
+
+#biodata img {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+#hamburger {
+  display: none;
+}
+
+aside {
+  position: absolute;
+  background-color: #ffe4a3;
+  top: 100%;
+  left: -900%;
+  padding: 3rem;
+  transition: 0.2s linear;
+  color: #ffe4a3;
+  border-bottom-right-radius: 2rem;
+}
+
+aside .biodata {
+  padding: 0 2rem;
+}
+
+aside.active {
+  left: 0;
+}
+
+aside .card {
+  background-color: rgba(71, 60, 51, 0.9);
+  padding: 1rem;
+  box-shadow: 0px 1px 20px 3px rgba(0, 0, 0, 0.45);
+  border-radius: 2rem;
+}
+
+aside .card figure {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+aside .card figure h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+aside .card .biodata {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+aside .card .biodata p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Header End */
+
+/* Main Start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/donut-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .content {
+  margin-top: 5rem;
+  padding: 1.4rem 7%;
+  max-width: 50rem;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  color: rgb(51, 72, 77);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.hero .content span {
+  color: #b09087;
+}
+
+.hero .content a {
+  position: relative;
+  color: rgb(51, 72, 77);
+  border-radius: 0.3rem;
+  background-color: #ffe4a3;
+  display: inline-block;
+  padding: 1.2rem;
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 0 #817353;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero .content a:hover {
+  background-color: #deb6ab;
+}
+
+.hero .content a:active {
+  top: 5px;
+  box-shadow: 0 0 0 black;
+}
+
+/* Main End */
+
+/* About Start */
+.about {
+  padding: 8rem 7%;
+  background-color: #ffe4a3;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.about h2 span {
+  color: #b09087;
+}
+
+.about .about-explain {
+  display: flex;
+}
+
+.about .about-explain .img-about {
+  flex: 1 1 45rem;
+  margin-inline-end: 3rem;
+}
+
+.about .about-explain .img-about img {
+  width: 100%;
+}
+
+.about .about-explain .text-about {
+  flex: 1 1 35rem;
+  padding: 0 2rem;
+}
+
+.about .about-explain .text-about h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about .about-explain .text-about p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2;
+}
+/* About End */
+
+/* Menu Start */
+.menu {
+  background-color: #ddbf86;
+  padding: 8rem 7%;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.menu p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+}
+
+.menu .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu .menu-container .menu-card {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.menu .menu-container .menu-card .menu-card-product {
+  width: 25rem;
+  margin-bottom: 1rem;
+}
+
+.menu .menu-container .menu-card .menu-card-title {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.menu .menu-container .menu-card .menu-card-price {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+/* Menu End */
+
+/* Contact Start */
+.contact {
+  background-color: #ab8b74;
+  padding: 8rem 7%;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.contact .maps-form {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.contact .maps-form .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .maps-form form {
+  flex: 1 1 45rem;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.contact .maps-form form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  color: white;
+  padding-left: 2rem;
+  border: 1px solid white;
+}
+
+.contact .maps-form form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: white;
+}
+
+.contact .maps-form form .input-group textarea {
+  background: none;
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 2rem;
+  color: white;
+}
+
+.contact .maps-form form .submit-button {
+  position: relative;
+  padding: 0.5rem 5rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(51, 72, 77);
+  background-color: #ffe4a3;
+  box-shadow: 0 5px 0 #817353;
+}
+
+.contact .maps-form form .submit-button:hover {
+  background-color: #deb6ab;
+}
+.contact .maps-form form .submit-button:active {
+  box-shadow: 0 0 0 black;
+  top: 5px;
+}
+/* Contact End */
+
+/* Footer Start */
+footer {
+  background-color: #765848;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 7%;
+}
+
+footer .social-media .social-media-links {
+  margin-top: 1rem;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .copyright {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: #ffe4a3;
+}
+
+footer .social-media h3 {
+  font-size: 1.5rem;
+  color: #ffe4a3;
+}
+
+footer .social-media-links a {
+  margin-inline: 1rem;
+  color: #ffe4a3;
+}
+
+footer .social-media-links a:hover {
+  color: #deb6ab;
+}
+
+/* Footer End */
+
+/* Media Queries */
+
+/* Laptop Start*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Laptop End*/
+
+/* Tablet Start*/
+@media (max-width: 820px) {
+  html {
+    font-size: 62.5%;
+  }
+  #hamburger {
+    display: inline-block;
+  }
+
+  /* Header Start */
+  header .logo {
+    margin-top: 2rem;
+  }
+
+  header .navbar-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    background-color: #ffe4a3;
+    width: 25rem;
+    transition: 0.2s linear;
+  }
+
+  header .navbar-container a {
+    display: block;
+    color: rgba(71, 60, 51, 0.9);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1.5rem;
+  }
+
+  header .navbar-container a:hover {
+    font-size: 2rem;
+    color: rgba(71, 60, 51, 1);
+  }
+
+  header .navbar-container.active {
+    right: 0;
+  }
+  /* Header End */
+
+  /* Main Start */
+  .hero .content {
+    width: 30rem;
+  }
+
+  /* About Start */
+  .about h2 {
+    margin: 1rem;
+  }
+
+  .about .about-explain {
+    flex-wrap: wrap;
+  }
+
+  .about .about-explain img-about {
+    padding: 0 1rem;
+  }
+
+  .about .about-explain .text-about {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  .about .about-explain .text-about h3 {
+    text-align: center;
+  }
+  /* About End */
+
+  /* Menu Start */
+  .menu {
+    padding: 12rem 7%;
+  }
+
+  /* Contact Start */
+  .contact {
+    padding: 12rem 7%;
+  }
+
+  .contact .maps-form {
+    flex-wrap: wrap;
+  }
+
+  .contact .maps-form .map {
+    height: 30rem;
+  }
+
+  .contact .maps-form form {
+    padding-top: 0;
+  }
+  /* Contact End */
+}
+/* Tablet End*/
+
+/* Mobile Phone Start */
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* Header Start */
+  header {
+    padding: 1.4rem 7%;
+  }
+
+  /* Header End */
+
+  /* Aside Start */
+  aside {
+    width: 100%;
+  }
+
+  aside .biodata {
+    padding: 3rem;
+  }
+
+  /* Aside End */
+
+  /* Main Start */
+  .content {
+    width: 25rem;
+  }
+  /* Main End */
+
+  /* About Start */
+  .about {
+    padding: 12rem 7%;
+  }
+  /* About End */
+
+  /* Footer Start */
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  footer .copyright {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  /* Footer End */
+}
+/* Mobile Phone End */
