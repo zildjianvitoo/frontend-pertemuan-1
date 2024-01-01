@@ -1,0 +1,478 @@
+:root {
+  --primary: #14b8a6;
+  --secondary: #0f172a;
+  /* var(--primary) */
+
+  /* BLOM FIX */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+
+nav {
+  width: 100%;
+  padding: 0.7rem;
+  position: fixed;
+  z-index: 1000;
+  /* box-shadow: 2px 1px 2px #000000; */
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  overflow: hidden;
+}
+
+nav .container {
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-con-nav img {
+  height: 6rem;
+}
+
+.container-nav-menu{
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.nav-menu {
+  
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin: 0 1rem;
+}
+
+.nav-menu ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-menu ul li a:hover {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.container-nav-menu .burger-icon{
+  display: none;
+  /* visibility: hidden; */
+}
+
+/* Nav-Side */
+
+.nav-side{
+  height: 100vh;
+  width: 50vw;
+  background-color: var(--primary);
+  /* opacity: 90%; */
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  right: -100%;
+  transition: 0.5s;
+  
+}
+
+.nav-side.active{
+  right: 0;
+}
+
+.nav-side .close-btn{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem 2rem 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.nav-side ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-side ul li{
+  display: flex;
+  justify-content: center;
+  margin:1rem 0;
+  padding: 0;
+}
+
+.nav-side ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Home */
+.home {
+  width: 100%;
+  min-height: 75vh;
+  padding-top: 10rem;
+  margin-bottom: 0rem;
+  overflow: hidden;
+}
+
+.home .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 5rem;
+}
+
+.home-bag1 span {
+  color: var(--primary);
+  font-weight: 700;
+  display: block;
+}
+
+.home-bag2 {
+  position: relative;
+}
+
+.home-bag2 img {
+  padding-bottom: 1.3rem;
+}
+
+.home-bag2 .lingkaran {
+  height: 22rem;
+  width: 22rem;
+  position: absolute;
+  background-color: var(--primary);
+  border-radius: 100%;
+  z-index: -1;
+  bottom: 0;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8rem;
+  overflow: hidden;
+}
+
+.about .judul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about .judul h1 {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.about .judul span {
+  color: var(--secondary);
+}
+
+.about .isi {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about .isi .kiri img {
+  max-width: 20rem;
+  margin-bottom: 3rem;
+}
+
+.about .isi .kanan {
+  width: 50%;
+  position: relative;
+}
+
+.about .isi .kanan span {
+  font-weight: 600;
+}
+
+.about .isi .kanan .awal {
+  color: var(--primary);
+}
+
+/* porto */
+.porto {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  background-color: #82b6b082;
+  padding-bottom: 10rem;
+  overflow: hidden;
+}
+
+.porto .judul h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.porto .isi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.porto .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: 0.4s ease-in-out ;
+}
+
+.porto .card:hover {
+  transform: scale(1.1);
+}
+
+.porto .card .image img {
+  width: 100%;
+  height: 15rem;
+  object-fit: scale-down;
+}
+
+.porto .card-content {
+  margin-top: 0;
+  padding: 0 0.7rem 0.7rem 0.7rem;
+}
+
+.porto .card-content h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  /* -webkit-text-stroke: .5px rgb(0, 0, 0); */
+}
+
+.porto .card-content p {
+  margin-top: 0;
+}
+
+/* Experience */
+.experience {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 8rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.experience .judul h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+  /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.experience .isi {
+  display: flex;
+  padding: 0 10rem 0 10rem;
+}
+
+.experience .isi .kiri {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .isi .kiri .atas {
+  display: flex;
+}
+
+.experience .isi .kiri .atas .tahun {
+  color: var(--primary);
+}
+
+.experience .isi .kiri h3 {
+  margin-right: 2rem;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.experience .isi .kiri .bawah {
+  display: flex;
+}
+
+.experience .isi .kiri .bawah .tahun {
+  color: var(--primary);
+}
+
+.experience .isi .kiri p {
+  color: rgb(159, 159, 159);
+}
+
+/* Footer */
+
+footer {
+  padding: 4rem;
+  background-color: #14b8a6;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+footer .container .atas{
+  display: flex;
+  justify-content: center;
+}
+
+footer .container .atas h4{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+footer .container .tengah {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container .tengah a {
+  color: white;
+  margin-left: 1rem;
+  transition: 150ms ease-in-out;
+}
+
+footer .container .tengah a:hover {
+  transform: translateY(-5px);
+}
+
+footer .container .bawah{
+  display: flex;
+  justify-content: center;
+}
+
+footer .container .bawah p{
+  color: white;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media screen and (max-width: 700px) {
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .container .img-con-nav {
+    /* display: none; */
+  }
+
+  nav .container .nav-menu {
+    display: none;
+    /* visibility: hidden; */
+
+    /* min-height: 100vh;
+    width: 50vw;
+    background-color: antiquewhite; */
+  }
+
+  .container-nav-menu .burger-icon{
+    display: flex;
+    /* visibility: visible; */
+  }
+
+  .home .container {
+    justify-content: center;
+  }
+
+  .about .isi .kanan {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .experience .isi {
+    padding: 1rem;
+  }
+
+  .experience .isi .kiri {
+    flex-direction: row;
+    margin-left: 0;
+  }
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 550px) {
+  nav {
+    /* padding: 0; */
+    width: 100%;
+  }
+
+  .home .container {
+    padding: 0;
+  }
+
+  .about .isi .kanan {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .experience .isi {
+    padding: 1rem;
+  }
+
+  .experience .isi .kiri {
+    width: 100%;
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  .experience .isi .kiri h3 {
+    margin-left: 0;
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  .experience .isi .kiri p {
+    margin-left: 0;
+    font-weight: 500;
+    font-size: 11px;
+  }
+}
